@@ -3,13 +3,17 @@ Code for reproducing analyses in the manuscript:
 
 Takashi Okada, Giulio Isacchini, QinQin Yu, and Oskar Hallatschek
 
-# Description of Repository
-
+Description of Repository
+---
 In this study, we developed a method for inferring the importation rates, i.e., the proportion of infections that a community imports from other communities, based on how rapidly the allele frequencies in the focal community converge to those in the donor communities.
 
-### usage_HMM_WF.ipynb
-The HMM-EM method is demonstrated using simulated data.
+HMM-EM
+___
+The HMM-EM method is demonstrated using simulated data in usage_HMM_WF.ipynb.
 
+* Dependencies
+    * Numpy, Scipy, CVXOPT
+    
 * INPUT
     * Spatio-temporal data of allele (or lineage) counts.
     * Spatio-temporal data of the total number of sampled sequences.
