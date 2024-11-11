@@ -21,7 +21,6 @@ def errA(A,Aref):
     return np.sqrt(Delta/count)
 
 
-
 def logGauss(x, mu, cov):
     vec=np.array([x-mu])
     lamlist=LA.eigvals(cov)
@@ -38,8 +37,6 @@ def getdiag(A):
     A_diag=np.array([ A[i,i] for i in range(len(A))])
    
     return A_diag
-
-
 
 
 def filter_initial(x0, mu_pre, V_pre,  Sigma):
@@ -307,8 +304,6 @@ def EM_A_L1(Ezz_all, Ezz_pre_all, mode,ridge=0, ridge_mat=np.zeros((1,1,1))):
         A_new[i]=np.array([sol['x'][j] for j in range(len(q))])
     
     return A_new
-
-
 
 
 
@@ -749,8 +744,6 @@ def calc_LH(counts, A, Ne,noisemode=0):
 
 
 
-
-
 def calc_LH_fixed_parameters(A, Ne, Csn, counts, counts_deme, infer_samplenoise=True,noisemode=2):
     # counts = (ND,Nlin,T) -> B = (T, Nlin, ND) 
     # counts_deme = (ND,T)
@@ -828,34 +821,3 @@ def calc_Pfix_unit_interval(freq,totcounts):
     pfix= np.array([sol['x'][i] for i in range(len(q))])
     
     return pfix
-    
-    
-# def demo_calc_LH_fixed_parameters(A, Ne, Csn, counts, counts_deme, infer_samplenoise=True,noisemode=0):
-#     # counts = (ND,Nlin,T) -> B = (T, Nlin, ND) 
-#     # counts_deme = (ND,T)
-#     # em_step_max: Max of EM steps
-#     #terminate_th: Terminate if the likelihood improvement < terminate_th
-    
-#     B = (counts.copy()).transpose([2,1,0])
-#     T, Nlins, ND=B.shape
-    
-#     for i in range(ND):
-#         for t in range(T):
-#             if counts_deme[i,t]>0:
-#                 B[t,:,i]*=1.0/counts_deme[i,t]
-                
-#     if infer_samplenoise==False:
-#         Csn=np.ones(ND)
-    
-#     lnLH_all=0
-    
-#     for lin in range(Nlins):
-
-#         mu_star=B[0,lin,:]
-#         V_star= np.diag([Csn[i]*(mu_star[i]*(1-mu_star[i]))/counts_deme[i,0] for i in range(ND)])
-#         x=B[:,lin,:].T # NDxT
-#         mu_filter, V_filter,P_filter,  lnLH=Kfilter(x, mu_star, V_star, A, counts_deme, Ne,Csn, noisemode=noisemode) 
-#         lnLH_all+=lnLH
-    
-#     return lnLH_all
-        
