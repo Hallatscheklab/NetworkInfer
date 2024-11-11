@@ -27,8 +27,4 @@ Miscellaneous tools used for analysis.
 ### data/
 Data from England and the USA used in the analysis.
 
-### data/
-Data from England and USA used in analysis. 
-
-
  
