@@ -7,8 +7,10 @@ Description of Repository
 ---
 In this study, we developed a method for inferring the importation rates, i.e., the proportion of infections that a community imports from other communities, based on how rapidly the allele frequencies in the focal community converge to those in the donor communities.
 
+
 HMM-EM
-___
+---
+
 The HMM-EM method is demonstrated using simulated data in usage_HMM_WF.ipynb.
 
 * Dependencies
