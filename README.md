@@ -7,13 +7,13 @@ Takashi Okada, Giulio Isacchini, QinQin Yu, and Oskar Hallatschek
 
 Description of Repository
 ---
-In this study, we developed a method for inferring the importation rates, i.e., the proportion of infections that a community imports from other communities, based on how rapidly the allele frequencies in the focal community converge to those in the donor communities.
+This repository contains the computational methods we used in the above study to infer disease importation rates from allele frequency time series. Specifically, our approach uses a hidden Markov model to infer the fraction of infections a community imports from other communities based on how rapidly the allele frequencies in the focal community converge to those in the donor communities. 
 
 
 HMM-EM
 ---
 
-The HMM-EM method is demonstrated using simulated data in usage_HMM_WF.ipynb.
+The HMM-EM method is validated using simulated data in usage_HMM_WF.ipynb.
 
 * Dependencies
     * Numpy, Scipy, CVXOPT
