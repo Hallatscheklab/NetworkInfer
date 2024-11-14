@@ -1,13 +1,27 @@
-# Inferring inter-community disease transmission networks
-Code for reproducing analyses in the manuscript:
+# Computational Tools for Inferring Inter-Community Disease Transmission
 
-Uncovering heterogenous inter-community disease transmission from neutral allele frequency time series
+This repository contains the computational tools and scripts used in our study: **“Uncovering Heterogeneous Inter-Community Disease Transmission from Neutral Allele Frequency Time Series”** by Takashi Okada, Giulio Isacchini, QinQin Yu, and Oskar Hallatschek. The study uses genomic surveillance data and mathematical models to infer transmission patterns between communities, with applications to SARS-CoV-2 data.
 
-Takashi Okada, Giulio Isacchini, QinQin Yu, and Oskar Hallatschek
-
-Description of Repository
+Introduction
 ---
-This repository contains the computational methods we used in the above study to infer disease importation rates from allele frequency time series. Specifically, our approach uses a hidden Markov model to infer the fraction of infections a community imports from other communities based on how rapidly the allele frequencies in the focal community converge to those in the donor communities. 
+
+The COVID-19 pandemic emphasized the need for precise models of disease transmission to forecast pathogen spread and inform public health interventions. Our study introduces a novel, data-driven approach to infer inter-community disease transmission rates using allele frequency convergence. The approach leverages Hidden Markov Models (HMMs) to model time series data of allele frequencies, bypassing the need for traditional, tree-based phylogenetic methods.
+
+
+
+Methods Overview
+---
+
+The computational method relies on analyzing the convergence of allele frequencies between regions to infer cross-community transmission rates. The main computational tool is a Hidden Markov Model (HMM) integrated with an Expectation-Maximization (EM) algorithm and Markov Chain Monte Carlo (MCMC) methods.
+
+Key Algorithms and Techniques
+
+	•	Hidden Markov Model (HMM): Used to infer allele frequency dynamics, treating true frequencies as hidden states.
+	•	Kalman Filtering: Efficiently handles noise in frequency measurements by modeling genetic drift and sampling error.
+	•	Expectation-Maximization (EM) Algorithm: Accelerates the inference of model parameters.
+	•	Markov Chain Monte Carlo (MCMC): Provides posterior distributions for transmission rates and genetic drift parameters.
+	•	Multidimensional Scaling (MDS): Used to visualize inferred transmission networks and compare them to geographical distances.
+
 
 
 HMM-EM
@@ -34,5 +48,17 @@ Miscellaneous tools used for analysis.
 
 ### data/
 Data from England and the USA used in the analysis.
+
+
+
+License
+---
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+---
+
+We would like to thank the COVID-19 Genomics UK Consortium (COG-UK) and GISAID for providing access to the SARS-CoV-2 genomic data used in this study.
 
  
