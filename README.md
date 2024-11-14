@@ -1,5 +1,7 @@
-# Inference of Importation Network
+# Inferring inter-community disease transmission networks
 Code for reproducing analyses in the manuscript:
+
+Uncovering heterogenous inter-community disease transmission from neutral allele frequency time series
 
 Takashi Okada, Giulio Isacchini, QinQin Yu, and Oskar Hallatschek
 
