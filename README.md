@@ -16,12 +16,19 @@ The computational method relies on analyzing the convergence of allele frequenci
 
 Key Algorithms and Techniques
 
-	•	Hidden Markov Model (HMM): Used to infer allele frequency dynamics, treating true frequencies as hidden states.
-	•	Kalman Filtering: Efficiently handles noise in frequency measurements by modeling genetic drift and sampling error.
-	•	Expectation-Maximization (EM) Algorithm: Accelerates the inference of model parameters.
-	•	Markov Chain Monte Carlo (MCMC): Provides posterior distributions for transmission rates and genetic drift parameters.
-	•	Multidimensional Scaling (MDS): Used to visualize inferred transmission networks and compare them to geographical distances.
+    •   Hidden Markov Model (HMM): Used to infer allele frequency dynamics, treating true frequencies as hidden states.
+    •   Kalman Filtering: Efficiently handles noise in frequency measurements by modeling genetic drift and sampling error.
+    •   Expectation-Maximization (EM) Algorithm: Accelerates the inference of model parameters.
+    •   Markov Chain Monte Carlo (MCMC): Provides posterior distributions for transmission rates and genetic drift parameters.
+    •   Multidimensional Scaling (MDS): Used to visualize inferred transmission networks and compare them to geographical distances.
 
+
+Preparation
+---
+Clone this repository and prepare a conda environment 
+    •   git clone https://github.com/Hallatscheklab/NetworkInfer.git 
+    •   cd NetworkInfer
+    •   conda env create -f environment.yml
 
 
 HMM-EM
@@ -60,5 +67,4 @@ Acknowledgments
 ---
 
 We would like to thank the COVID-19 Genomics UK Consortium (COG-UK) and GISAID for providing access to the SARS-CoV-2 genomic data used in this study.
-
  
