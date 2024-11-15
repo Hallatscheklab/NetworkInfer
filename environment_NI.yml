@@ -1,4 +1,4 @@
-name: NI
+name: NetworkInfer
 channels:
   - conda-forge
   - defaults
