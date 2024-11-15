@@ -31,6 +31,7 @@ Clone this repository and prepare a conda environment
     •   cd NetworkInfer
     •   conda env create -f environment.yml
 
+For the HMM-MCMC method, ........
 
 HMM-EM
 ---
@@ -58,6 +59,9 @@ Miscellaneous tools used for analysis.
 Data from England and the USA used in the analysis.
 
 
+HMM-MCMC
+---
+................
 
 License
 ---
