@@ -31,7 +31,16 @@ Clone this repository and prepare a conda environment
     •   cd NetworkInfer
     •   conda env create -f environment.yml
 
-The HMM-MCMC method is implemented in C++ and utilizes the [Eigen](http://eigen.tuxfamily.org) library for linear algebra. Eigen is located in HMM_MCMC/src/ within this repository (no installation required).
+The HMM-MCMC method is implemented in C++. A C++ compiler that supports at least C++11 is required. In the directory `HMM_MCMC/` of the local repository, compile the main.cc file
+
+    •   g++  main.cc -std=c++1 -o NI_MCMC
+
+You can run the program by executing
+
+    •   ./NI_MCMC -f WFsim
+
+
+Note that the HMM-MCMC method utilizes the [Eigen](http://eigen.tuxfamily.org) library, which is a header-only library located in HMM_MCMC/src/ within this repository.
 
 HMM-EM
 ---
