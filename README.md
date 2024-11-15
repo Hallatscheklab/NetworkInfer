@@ -26,6 +26,7 @@ Key Algorithms and Techniques
 Preparation
 ---
 Clone this repository and prepare a conda environment 
+
     •   git clone https://github.com/Hallatscheklab/NetworkInfer.git 
     •   cd NetworkInfer
     •   conda env create -f environment.yml
