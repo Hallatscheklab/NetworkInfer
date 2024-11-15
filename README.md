@@ -27,20 +27,21 @@ Preparation
 ---
 Clone this repository and prepare a conda environment 
 
-    •   git clone https://github.com/Hallatscheklab/NetworkInfer.git 
-    •   cd NetworkInfer
-    •   conda env create -f environment.yml
+    $   git clone https://github.com/Hallatscheklab/NetworkInfer.git 
+    $   cd NetworkInfer
+    $   conda env create -f environment.yml
 
 The HMM-MCMC method is implemented in C++. A C++ compiler that supports at least C++11 is required. In the directory `HMM_MCMC/` of the local repository, compile the main.cc file
 
-    •   g++  main.cc -std=c++1 -o NI_MCMC
+    $   g++  main.cc -std=c++1 -o NI_MCMC
 
-You can run the program by executing
+You can run the program by  executing the following command in the directory `HMM_MCMC/`:
 
-    •   ./NI_MCMC -f WFsim
+    $   ./NI_MCMC -f WFsim
 
+The flag `-f WFsim` specifies the input filename. See below for the list of flags.
 
-Note that the HMM-MCMC method utilizes the [Eigen](http://eigen.tuxfamily.org) library, which is a header-only library located in HMM_MCMC/src/ within this repository.
+**Note**: The HMM-MCMC method utilizes the [Eigen](http://eigen.tuxfamily.org) library, which is a header-only library located in `HMM_MCMC/src/` within this repository. 
 
 HMM-EM
 ---
@@ -61,16 +62,21 @@ The HMM-EM method is validated using simulated data in usage_HMM_WF.ipynb.
     * Least squares estimation of ${\mathbf A}_{ij}$.(noise ignored).
     * Inferred measurement noise overdispersion.
 
-### modules/
-Miscellaneous tools used for analysis.
 
-### data/
-Data from England and the USA used in the analysis.
 
 
 HMM-MCMC
 ---
 ................
+
+
+---
+
+### `modules/`
+Miscellaneous tools used for analysis.
+
+### `data/`
+Data from England and the USA used in the analysis.
 
 License
 ---
