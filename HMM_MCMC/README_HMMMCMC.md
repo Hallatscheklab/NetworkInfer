@@ -34,9 +34,9 @@ The number of recorded A and Ne in these files is set to numprint=1000 in main.c
 
 - *-f demo*: filename of the input. -f demo is used if the input files are "counts_demo.csv" and "shape_demo.csv".
 
-- *-g res_demo*: filename of the output. If -g demo is used, A_demo.csv and Ne_demo.csv are created. The default value is 'inferred'.
+<!-- - *-g res_demo*: filename of the output. If -g demo is used, A_demo.csv and Ne_demo.csv are created. The default value is 'inferred'. -->
 
-- *-d dir*: The name of the folder that contains the input files. The output files are crated in output/dir/.
+<!-- - *-d dir*: The name of the folder that contains the input files. The output files are crated in output/dir/. -->
 
 - *-n 0* (default), *-n 1* or *-n 2* : Noise assumption, specified by 0 or 1 or 2. The proportionality constants of the diagonal components of the covariance matrices are;
     - -n 0: $f_{t,i,l}(1-f_{t,i,l})$
