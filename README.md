@@ -25,13 +25,18 @@ The computational method relies on analyzing the convergence of allele frequenci
 
 ## Preparation
 
-The HMM-EM method is implemented in Python (dependencies: Numpy, Scipy, CVXOPT). To prepare a Conda environment, clone this repository and execute the following commands:
+The **HMM-EM method** is implemented in Python (dependencies: Numpy, Scipy, CVXOPT). To prepare a Conda environment, clone this repository and execute the following commands:
 ```
 git clone https://github.com/Hallatscheklab/NetworkInfer.git 
 cd NetworkInfer
 conda env create -f environment.yml
 ```
-The HMM-MCMC method is implemented in C++. A C++ compiler that supports at least C++11 is required. In the directory `HMM_MCMC/` of the local repository, compile the main.cc file
+You can test the program by executing the following command in the root directory:
+```
+python HMMEM.py WFsim
+```
+
+The **HMM-MCMC method** is implemented in C++. A C++ compiler that supports at least C++11 is required. In the directory `HMM_MCMC/` of the local repository, compile the main.cc file
 ```
 g++  main.cc -std=c++1 -o NI_MCMC
 ```
@@ -39,7 +44,7 @@ You can test the program by executing the following command in the directory `HM
 ```
  ./NI_MCMC -f WFsim
 ```
-The flag `-f` specifies the input filename (here, WFsim) and loads the input data located in `HMM_MCMC/input`. For more information on the list of flags, see below or refer to `HMM_MCMC/README_HMMMCMC.md`.
+<!-- The flag `-f` specifies the input filename (here, WFsim) and loads the input data located in `HMM_MCMC/input`. For more information on the list of flags, see below or refer to `HMM_MCMC/README_HMMMCMC.md`. -->
 
 **Note**: The HMM-MCMC method utilizes the [Eigen](http://eigen.tuxfamily.org) library, which is a header-only library located in `HMM_MCMC/src/` within this repository. 
 
@@ -63,7 +68,7 @@ In the root directory, execute the following command:
 ```
 python HMMEM.py filename 
 ```
-For L2 regularizaiton, add the flag `--ridge 0.01` (here, $c_{\rm ridge}=0.01$; the default value is $c_{\rm ridge}=0.0$). When a nonzero $c_{\rm ridge}$ is specified, a numpy array $\Lambda_{ij}$ is loaded from `HMM_EM/input/ridgemat_filename.npy` and the term $c_{\rm ridge} \sum_{i,j}\Lambda_{ij} A_{ij}^2$ with is introduce to the cost function. 
+For L2 regularizaiton, add the flag `--ridge 0.01` (here, $c_{\rm ridge}=0.01$; the default value is $c_{\rm ridge}=0.0$). When a nonzero $c_{\rm ridge}$ is specified, a numpy array $\Lambda_{ij}$ is loaded from `HMM_EM/input/ridgemat_filename.npy` and the term $c_{\rm ridge} \sum_{i,j}\Lambda_{ij} A_{ij}^2$ is introduce to the cost function. 
 
 
 The HMM-EM method is validated using simulated data in `usage_HMM_WF.ipynb`.
