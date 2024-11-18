@@ -50,17 +50,20 @@ You can test the program by executing the following command in the directory `HM
 
 ## HMM-EM
  
-### INPUT, located in `HMM_EM/input/`
+### INPUT
+Located in `HMM_EM/input/`:
 - `counts_filename.npy`: Spatio-temporal data of allele (or lineage) counts. A numpy array with shape ($T$, $N_{\rm allele}$, $N_{\rm deme}$), where $T$ denotes the number of timepoints. 
 - `totcounts_filename.npy`: Spatio-temporal data of the total number of sampled sequences.  A numpy array with shape ($T$, $N_{\rm deme}$). 
 
-### OUTPUT, located in `HMM_EM/output/`
+### OUTPUT
+Located in `HMM_EM/output/`:
 - `LH_ridge0.0_filename.npy`: Record of log likelihood across EM cycles.
 - `A_ridge0.0_filename.npy`: Inferred importation-rate matrix ${\mathbf{A}_{ij}}$.
 - `Ne_ridge0.0_filename.npy`: Inferred effective population size.
 - `Csn_ridge0.0_filename.npy`: Inferred measurement noise overdispersion.
 - `A_LS_filename.npy`: Least squares estimation of ${\mathbf{A}_{ij}}$ (noise ignored).
 
+Here `ridge0.0` in the output files denotes the strength of regularization, represented by $c_{\rm ridge}$ (see usage below).
 
 ### Usage
 
@@ -77,12 +80,15 @@ The HMM-EM method is validated using simulated data in `usage_HMM_WF.ipynb`.
 ## HMM-MCMC
 
     
-### INPUT, located in `HMM_MCMC/input/`
-- `counts_filename.csv`: Spatio-temporal data of allele (or lineage) counts. A csv file with dimensions ($T \times N_{\rm allele}$,  $N_{\rm deme}$). The allele frequencies of the $i$-th allele at the $t$-th timepoint appear in the $T\times (i-1)+t$-th row of the csv file. 
-- `totcounts_filename.csv`: Spatio-temporal data of the total number of sampled sequences.  A csv file with dimensions ($T $,  $N_{\rm deme}$)
-- `shape_filename.csv`: The values of $T \times N_{\rm allele}$,  $N_{\rm deme}$, which are used to convert the 2-dim allele count data into 3-dimensional format in the program. 
+### INPUT
+Located in `HMM_MCMC/input/`:
+- `counts_filename.csv`: Spatio-temporal data of allele (or lineage) counts. This CSV file has dimension ($T \times N_{\rm allele}$,  $N_{\rm deme}$). The count data needs to be concatenated along alleles, starting with the counts for the 1st allele, followed by the 2nd allele, and so on, such that the $T\times (i-1)+t$-th row of the csv file represents the allele frequencies of the $i$-th allele at the $t$-th timepoint across $N_{\rm deme}$ populations. 
 
-### OUTPUT, located in `HMM_MCMC/output/`
+- `totcounts_filename.csv`: Spatio-temporal data of the total number of sampled sequences.  This csv file has dimensions ($T $,  $N_{\rm deme}$)
+- `shape_filename.csv` contains the dimensions $(T,  N_{\rm allele}$,  $N_{\rm deme})$, which are used to convert the 2-dim data of allele counts into 3-dimensional format in the program. 
+
+### OUTPUT
+Located in `HMM_MCMC/output/`:
 - `A_filename.csv`: Inferred importation-rate matrix ${\mathbf A}_{ij}$.
 - `Ne_filename.csv`: Inferred effective population size.
 - `C_filename.csv`: Inferred measurement noise overdispersion.
