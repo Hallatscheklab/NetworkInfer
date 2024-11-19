@@ -38,7 +38,7 @@ python HMMEM.py WFsim
 
 The **HMM-MCMC method** is implemented in C++. A C++ compiler that supports at least C++11 is required. In the directory `HMM_MCMC/` of the local repository, compile the main.cc file
 ```
-g++  main.cc -std=c++1 -o NI_MCMC
+g++  main.cc -std=c++11 -o NI_MCMC
 ```
 You can test the program by executing the following command in the directory `HMM_MCMC/`:
 ```
@@ -71,7 +71,7 @@ In the root directory, execute the following command:
 ```
 python HMMEM.py filename 
 ```
-For L2 regularizaiton, add the flag `--ridge 0.01` (here, $c_{\rm ridge}=0.01$; the default value is $c_{\rm ridge}=0.0$). When a nonzero $c_{\rm ridge}$ is specified, a numpy array $\Lambda_{ij}$ is loaded from `HMM_EM/input/ridgemat_filename.npy` and the term $c_{\rm ridge} \sum_{i,j}\Lambda_{ij} A_{ij}^2$ is introduce to the cost function. 
+For L2 regularizaiton, add the flag `--ridge 0.01` (here, $c_{\rm ridge}=0.01$; the default value is $c_{\rm ridge}=0.0$). When a nonzero $c_{\rm ridge}$ is specified, a numpy array $\Lambda_{ij}=0,1$ with shape ( $N_{\rm deme}$, $N_{\rm deme}$) is loaded from `HMM_EM/input/ridgemat_filename.npy` and the term $c_{\rm ridge} \sum_{i,j}\Lambda_{ij} A_{ij}^2$ is introduce to the cost function. 
 
 
 The HMM-EM method is validated using simulated data in `usage_HMM_WF.ipynb`.
