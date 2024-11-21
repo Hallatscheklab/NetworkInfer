@@ -110,12 +110,13 @@ The HMM-MCMC method is validated using simulated data in `usage_HMM_WF.ipynb`.
 ### `modules/`
 Functions used for the infernece.
 
-### `data/`
-Data from England and the USA used in the analysis.
-
 
 ### `MDS.ipynb`
 Visualizes the MDS (Multidimensional Scaling) using the inferred matrix $\mathbf{A}_{ij}$ for the Delta wave in England.
+
+### `data/`
+Data from England and the USA used in the analysis.
+
 
 License
 ---
