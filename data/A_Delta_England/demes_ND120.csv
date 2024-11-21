@@ -1,0 +1,121 @@
+,deme,region
+0,Sunderland,NE
+1,County Durham,NE
+2,Gateshead,NE
+3,Northumberland,NE
+4,North Tyneside,NE
+5,Newcastle upon Tyne,NE
+6,Wigan,NW
+7,Salford,NW
+8,Wirral,NW
+9,Bolton,NW
+10,Cumbria,NW
+11,Blackpool,NW
+12,Sefton,NW
+13,Trafford,NW
+14,Liverpool,NW
+15,Cheshire West and Chester,NW
+16,Stockport,NW
+17,Blackburn with Darwen,NW
+18,Tameside,NW
+19,Warrington,NW
+20,Cheshire East,NW
+21,Lancashire,NW
+22,Bury,NW
+23,Rochdale,NW
+24,Oldham,NW
+25,Manchester,NW
+26,Wakefield,YH
+27,North Lincolnshire,YH
+28,Sheffield,YH
+29,North East Lincolnshire,YH
+30,York,YH
+31,East Riding of Yorkshire,YH
+32,Rotherham,YH
+33,Leeds,YH
+34,North Yorkshire,YH
+35,Calderdale,YH
+36,Bradford,YH
+37,"Kingston upon Hull, City of",YH
+38,Barnsley,YH
+39,Kirklees,YH
+40,Doncaster,YH
+41,Derby,EM
+42,Nottingham,EM
+43,Lincolnshire,EM
+44,Northamptonshire,EM
+45,Leicestershire,EM
+46,Derbyshire,EM
+47,Leicester,EM
+48,Nottinghamshire,EM
+49,Wolverhampton,WM
+50,Shropshire,WM
+51,Stoke-on-Trent,WM
+52,Coventry,WM
+53,Dudley,WM
+54,Warwickshire,WM
+55,Sandwell,WM
+56,Worcestershire,WM
+57,Staffordshire,WM
+58,Walsall,WM
+59,Birmingham,WM
+60,Telford and Wrekin,WM
+61,Solihull,WM
+62,Bedford,EE
+63,Norfolk,EE
+64,Southend-on-Sea,EE
+65,Hertfordshire,EE
+66,Luton,EE
+67,Essex,EE
+68,Cambridgeshire,EE
+69,Suffolk,EE
+70,Peterborough,EE
+71,Central Bedfordshire,EE
+72,Hounslow,LDN
+73,Havering,LDN
+74,Barnet,LDN
+75,Ealing,LDN
+76,Bexley,LDN
+77,Redbridge,LDN
+78,Lewisham,LDN
+79,Waltham Forest,LDN
+80,Haringey,LDN
+81,Brent,LDN
+82,Tower Hamlets,LDN
+83,Greenwich,LDN
+84,Hillingdon,LDN
+85,Harrow,LDN
+86,Bromley,LDN
+87,Sutton,LDN
+88,Southwark,LDN
+89,Croydon,LDN
+90,Lambeth,LDN
+91,Wandsworth,LDN
+92,Enfield,LDN
+93,Newham,LDN
+94,Hampshire,SE
+95,Kent,SE
+96,Surrey,SE
+97,Portsmouth,SE
+98,West Berkshire,SE
+99,East Sussex,SE
+100,Medway,SE
+101,Milton Keynes,SE
+102,Oxfordshire,SE
+103,Southampton,SE
+104,Brighton and Hove,SE
+105,Buckinghamshire,SE
+106,West Sussex,SE
+107,"Bournemouth, Christchurch and Poole",SW
+108,Gloucestershire,SW
+109,Dorset,SW
+110,Plymouth,SW
+111,Bath and North East Somerset,SW
+112,North Somerset,SW
+113,Devon,SW
+114,"Bristol, City of",SW
+115,Somerset,SW
+116,South Gloucestershire,SW
+117,Wiltshire,SW
+118,Swindon,SW
+119,Cornwall,SW
