@@ -115,7 +115,7 @@ Data from England and the USA used in the analysis.
 
 
 ### `MDS.ipynb`
-Visualizes the MDS (Multidimensional Scaling) using the inferred matrix $\mathbf A_{ij}$ for the Delta wave in England.
+Visualizes the MDS (Multidimensional Scaling) using the inferred matrix $\mathbf{A}_{ij}$ for the Delta wave in England.
 
 License
 ---
